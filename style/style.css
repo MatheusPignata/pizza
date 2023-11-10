@@ -65,7 +65,9 @@ header .imgs img{
     background: url(../img/banner.jpg) no-repeat center;
     background-size: cover;
     border-radius: 0 0 7% 7%;
-    box-shadow: 0 0 40px var(--bg);
+    box-shadow: 0 0 10px black,
+                0 0 20px black,
+                0 0 40px black;
     display: flex;
     align-items: center;
     justify-content: left;
