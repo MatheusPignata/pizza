@@ -57,7 +57,15 @@ var data = [
 
 function load(){
     let card = document.querySelector('.card')
+    let main = document.querySelector('.main')
     data.forEach(pizza => {
-
+        let clone = card.cloneNode(true);
+        clone.classList.remove('model');
+        clone.querySelector('#img').src = pizza.img;
+        clone.querySelector('#nome').innerHTML = pizza.nome;
+        clone.querySelector('#nomeBack').innerHTML = pizza.nome;
+        clone.querySelector('#desc').innerHTML = pizza.desc;
+        clone.querySelector('#preco').innerHTML = pizza.preco;
+        main.appendChild(clone);
     })
 }

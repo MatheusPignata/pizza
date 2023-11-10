@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Pizzon</title>
 </head>
-<body>
+<body onload="load()">
 
     <header>
 
@@ -35,14 +35,14 @@
     </div>
 
     <div class="main">
-        <div class="card">
+        <div class="card model">
             <div class="content">
               <div class="back">
                 <div class="back-content">
-                  <div id="img">
-          
+                  <div >
+                    <img src="" alt="" id="img" class="img">
                   </div>
-                  <strong id="nome">Hover Me</strong>
+                  <strong id="nome" style="font-family: 'Lobster', sans-serif; font-size: 26px" ></strong>
                 </div>
               </div>
               <div class="front">
@@ -57,16 +57,15 @@
                 </div>
           
                 <div class="front-content">
-                  <small class="badge" id="nome">Pasta</small>
+                  <small class="badge" id="nomeBack"></small>
                   <div class="description">
                     <div class="title">
                       <p class="title">
-                        <strong id="desc">Spaguetti Bolognese</strong>
+                        <strong id="desc"></strong>
                       </p>
-                      <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                      <svg fill-rule="nonzero" height="40px" width="40px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
                     </div>
                     <p class="card-footer" id="preco">
-                      30 Mins &nbsp; | &nbsp; 1 Serving
                     </p>
                   </div>
                 </div>
